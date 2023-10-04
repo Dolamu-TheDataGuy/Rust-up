@@ -133,34 +133,34 @@
 // }
 
 // 10 . Fill the blanks
-use std::ops::{Range, RangeInclusive};
-fn main() {
-    assert_eq!((1..5), Range{start: 1, end: 5});
-    assert_eq!((1..=5), RangeInclusive::new(1,5));
-    println!("Success!");
-}
+// use std::ops::{Range, RangeInclusive};
+// fn main() {
+//     assert_eq!((1..5), Range{start: 1, end: 5});
+//     assert_eq!((1..=5), RangeInclusive::new(1,5));
+//     println!("Success!");
+// }
 
 // 11. Computations (Fill the blanks)
-fn main() {
-    // Integer addition
-    assert!(1u32 + 2u32 ==3u32);
+// fn main() {
+//     // Integer addition
+//     assert!(1u32 + 2u32 ==3u32);
 
-    // Integer subtraction
-    assert!(1i32 - 2i32 == -1i32);
-    assert!(1i8 - 2i8 == -1i8);
+//     // Integer subtraction
+//     assert!(1i32 - 2i32 == -1i32);
+//     assert!(1i8 - 2i8 == -1i8);
 
-    assert!(38 * 50 == 150); // i32
+//     assert!(38 * 50 == 150); // i32
 
-    assert!(9.6 as f32 / 3.2 as f32 == 3.0 as f32);
+//     assert!(9.6 as f32 / 3.2 as f32 == 3.0 as f32);
     
-    assert(24 % 5 == 4); // i32
+//     assert(24 % 5 == 4); // i32
 
-    // Short-circuiting boolean logic  1 - True , 0 - False , AND, OR, NOT
-    assert!(true && false == false);
-    assert!(true || false == true);
-    assert!(!true == false);
+//     // Short-circuiting boolean logic  1 - True , 0 - False , AND, OR, NOT
+//     assert!(true && false == false);
+//     assert!(true || false == true);
+//     assert!(!true == false);
     
-}
+// }
 
 
 
