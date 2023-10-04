@@ -185,7 +185,7 @@
 //     print!("Success!\n");
 // }
 
-// 2. Make it work
+// 1.1 Make it work
 // fn main() {
 //     let c1: char = 'a';
 //     print_char(c1);
@@ -196,11 +196,21 @@
 // }
 
 //2. Boolean
-fn main() {
-    let _f: bool = false;
+// fn main() {
+//     let _f: bool = false;
 
-    let t: bool = true;
-    if !t {
-        print!("Success!\n");
-    }
+//     let t: bool = true;
+//     if t {
+//         print!("Success!\n");
+//     }
+// }
+
+// 2.1
+fn main() {
+    let f: bool = false;
+    let t: bool = true && false; // false
+
+    assert_eq!(t, f);
+
+    print!("Success!");
 }
