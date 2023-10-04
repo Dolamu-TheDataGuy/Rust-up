@@ -2,27 +2,27 @@
 
 // Fix the error below with least amount of modification
 fn main() {
-    let (mut x , y) = (1, 2);
+    let (x , y) = (1, 2);
     x += 2;
 
     assert_eq!(x, 3);
     assert_eq!(y, 2);
 
-    print!("Success!")
+    print!("Success!\n")
 }
 
 
 
 // Destructuring assignment
-fn main() {
-    let (x, y);  // same as let x and let y on different lines
+// fn main() {
+//     let (x, y);  // same as let x and let y on different lines
     
-    (x, ..) = (3, 4);
-    [.., y] = [1, 2];
+//     (x, ..) = (3, 4);
+//     [.., y] = [1, 2];
 
-    assert_eq!([x,y], [3, 2])
-    println!("Worked!");
-}
+//     assert_eq!([x,y], [3, 2])
+//     println!("Worked!");
+// }
 
 
 // Tuples in Rust
