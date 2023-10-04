@@ -90,6 +90,7 @@
 // 6 . Modify `assert` to make it work
 // fn main() {
 //     let v: u16 = 1_024 + 0xff + 0o77 + 0b1111_1111; // 1024 + 255 + 63 + 255
+//     print!("{}\n", v);
 //     assert!(v == 1597);
 
 //     println!("Success!");
@@ -119,18 +120,18 @@
 
 // 9. Range in Rust
 // Two goals: 1. Modify assert! to make it work 2. Make println! output: 97-122
-// fn main() {
-//     let mut sum: i32 = 0;
-//     for i in -3..2 {  // 2 is excluded
-//         sum += i;
-//     }
+fn main() {
+    let mut sum: i32 = 0;
+    for i in -3..=2 {  // 2 is excluded
+        sum += i;
+    }
     
-//     assert!(sum==-5);
+    assert!(sum==-3);
 
-//     for c in 'a'..='z' {
-//         println!("{}", c as u8); // ASCII Charts
-//     }
-// }
+    for c in 'a'..='z' {
+        println!("{}", c as u8); // ASCII Charts
+    }
+}
 
 // 10 . Fill the blanks
 // use std::ops::{Range, RangeInclusive};
