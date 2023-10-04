@@ -172,16 +172,35 @@
 
 // Char, Bool, and Unit.
 //1. Character (Char)
-use std::mem::size_of_val;
+// use std::mem::size_of_val;
+// fn main() {
+//     let c1: char = 'a'; // 4 bytes
+//     assert_eq!(size_of_val(&c1),4);
+
+//     print!("{}\n", size_of_val(&c1));
+
+//     let c2: char = 'b';
+//     assert_eq!(size_of_val(&c2), 4);
+
+//     print!("Success!\n");
+// }
+
+// 2. Make it work
+// fn main() {
+//     let c1: char = 'a';
+//     print_char(c1);
+// }
+
+// fn print_char(c: char) {
+//     println!("{}", c);
+// }
+
+//2. Boolean
 fn main() {
-    let c1: char = 'a'; // 4 bytes
-    assert_eq!(size_of_val(&c1),4);
+    let _f: bool = false;
 
-    print!("{}\n", size_of_val(&c1));
-
-    let c2: char = 'b';
-    assert_eq!(size_of_val(&c2), 4);
-
-    print!("Success!\n");
+    let t: bool = true;
+    if !t {
+        print!("Success!\n");
+    }
 }
-
