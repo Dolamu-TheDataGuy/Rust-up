@@ -8,7 +8,7 @@ fn main() {
     assert_eq!(x, 3);
     assert_eq!(y, 2);
 
-    println!("Success!")
+    print!("Success!")
 }
 
 
