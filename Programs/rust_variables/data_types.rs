@@ -142,44 +142,46 @@
 // }
 
 // 11. Computations (Fill the blanks)
-fn main() {
-    // Integer addition
-    assert!(1u32 + 2u32 ==3u32);
+// fn main() {
+//     // Integer addition
+//     assert!(1u32 + 2u32 ==3u32);
 
-    // Integer subtraction
-    assert!(1i32 - 2i32 == -1i32);
-    assert!(1i8 - 2i8 == -1i8);
+//     // Integer subtraction
+//     assert!(1i32 - 2i32 == -1i32);
+//     assert!(1i8 - 2i8 == -1i8);
 
-    assert!(30u16 * 50u16 == 1500u16); // u16
+//     assert!(30u16 * 50u16 == 1500u16); // u16
 
-    assert!(9.6 as f32 / 3.2 as f32 == 3.0 as f32);
+//     assert!(9.6 as f32 / 3.2 as f32 == 3.0 as f32);
     
-    assert!(24 % 5 == 4); // i32
+//     assert!(24 % 5 == 4); // i32
 
-    // Short-circuiting boolean logic  1 - True , 0 - False , AND, OR, NOT
-    assert!(true && false == false);
-    assert!(true || false == true);
-    assert!(!true == false);
+//     // Short-circuiting boolean logic  1 - True , 0 - False , AND, OR, NOT
+//     assert!(true && false == false);
+//     assert!(true || false == true);
+//     assert!(!true == false);
 
-    // Bitwise operations
-    print!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
-    print!("0011 OR 0101 is {:04b}", 0b0011u32 | 0b0101);
-    print!("0011 XOR 0101 is {:04b}", 0b0011u32 ^ 0b0101);
-    print!("1 << 5 is {}", 1u32 << 5);
-    print!("0x80 >> 2 is 0x{:x}", 0x80u32 << 5);
+//     // Bitwise operations
+//     print!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
+//     print!("0011 OR 0101 is {:04b}", 0b0011u32 | 0b0101);
+//     print!("0011 XOR 0101 is {:04b}", 0b0011u32 ^ 0b0101);
+//     print!("1 << 5 is {}", 1u32 << 5);
+//     print!("0x80 >> 2 is 0x{:x}", 0x80u32 << 5);
     
- }
+//  }
 
 // Char, Bool, and Unit.
 //1. Character (Char)
 use std::mem::size_of_val;
 fn main() {
-    let c1 = 'a';
-    assert_eq!(size_of_val(&c1),1);
+    let c1: char = 'a'; // 4 bytes
+    assert_eq!(size_of_val(&c1),4);
 
-    let c2 = 'b';
-    assert_eq!(size_of_val(&c2), 3);
+    print!("{}\n", size_of_val(&c1));
 
-    print!("Success!");
+    let c2: char = 'b';
+    assert_eq!(size_of_val(&c2), 4);
+
+    print!("Success!\n");
 }
 
