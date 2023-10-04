@@ -14,8 +14,6 @@ fn gives_ownership() -> String {
     let some_string = String::from("yours");
 
     some_string         // this value is return to s1 which is the calling function
-    
-
 }
 
 
