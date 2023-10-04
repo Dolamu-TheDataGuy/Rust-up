@@ -206,11 +206,41 @@
 // }
 
 // 2.1
+// fn main() {
+//     let f: bool = false;
+//     let t: bool = true && false; // false
+
+//     assert_eq!(t, f);
+
+//     print!("Success!");
+// }
+
+
+// 3. Unit type
+// Make it work, don't modify 'implicitly_ret_unit
+// fn main() {
+//     let _v: () = ();
+
+//     let _x: (i32, i32) = (2, 3);
+//     assert_eq!(_v, implicitly_ret_unit());
+
+//     print!("Success!\n");
+// }
+
+// fn implicitly_ret_unit() {
+//     print!("I will return a ()\n");
+// }
+
+// Don't use this one
+// fn explicitly_ret_unit() -> () {
+//     println!("I will return a ()");
+// }
+
+// 3.1 What is the size of the unit type?
+use std::mem::size_of_val;
 fn main() {
-    let f: bool = false;
-    let t: bool = true && false; // false
+    let unit: () = ();
+    assert!(size_of_val(&unit) == 0);
 
-    assert_eq!(t, f);
-
-    print!("Success!");
+    println!("Success!");
 }
