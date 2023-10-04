@@ -2,7 +2,7 @@
 
 // Fix the error below with least amount of modification
 fn main() {
-    let (x , y) = (1, 2);
+    let (mut x , y) = (1, 2);
     x += 2;
 
     assert_eq!(x, 3);
