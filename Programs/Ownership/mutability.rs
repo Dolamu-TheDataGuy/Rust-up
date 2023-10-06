@@ -25,3 +25,47 @@
 
 //     print!("Success!\n");
 // }
+
+
+// Partial Move
+// fn main() {
+//     #[derive(Debug)]
+//     struct Person {
+//         name: String,
+//         age: Box<u8>,
+//     }
+
+//     let person: Person = Person {
+//         name: String::from("Alice"),
+//         age: Box::new(20),
+//     };
+
+//     // name is moved out of person, but age is referenced
+//     let Person {name, ref age} = person;
+
+//     print!("The person's age is {}\n", age);
+
+//     print!("The person's name is {}\n", name);
+
+// }
+
+
+// 8
+// fn main() {
+//     let t: (String, String) = (String::from("hello"), String::from("world"));
+
+//     let _s: String = t.0; // t is no longer the owner of t[0], so we cant access t[0] again.
+
+//     // Modify this line only, don't use `_s`
+//     println!("{:?}", t.1);
+// }
+
+
+fn main() {
+    let t: (String, String) = (String::from("hello"), String::from("world"));
+
+    let (s1, s2) = __;
+
+    // Modify this line only, don't use `_s`
+    println!("{:?}, {:?}, {:?}", s1, s2, t);  // -> "hello", "world", ("hello", "world")
+}
