@@ -11,7 +11,7 @@ fn main() {
         // meaning that the reference_to_nothing variable will point to a something that has been dropped and invalid.
 // }
 
-fn dangle() ->  String {
+fn no_dangle() ->  String {
     let s = String::from("hello");
     s
 }
