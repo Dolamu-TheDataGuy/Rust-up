@@ -99,15 +99,31 @@
 // }
 
 
+// fn main() {
+//      let s: String = String::from("hello");
+
+//      let slice1: &str = &s[0..2];
+
+//      let slice2: &str = &s[..2];
+
+//      assert_eq!(slice1, slice2);
+
+//      println!("Success!")
+
+// }
+
+
+// &String can be implicitly converted to &str.
 fn main() {
-     let s: String = String::from("hello");
+    let mut s: String = String::from("hello wold");
 
-     let slice1: &str = &s[0..2];
+    let word: &str = first_word(&s); // &str
+    println!("the first word is {}", word);
+    
+    s.clear();  //error
+}
 
-     let slice2: &str = &s[..2];
 
-     assert_eq!(slice1, slice2);
-
-     println!("Success!")
-
+fn first_word(s: &str) -> &str {
+    &s[..1]
 }
