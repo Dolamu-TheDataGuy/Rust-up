@@ -24,6 +24,20 @@ fn main() {
         email: String::from("oludaredolamu@gmail.com"),
         sign_in_count: 1,
     };
+
+    // Wrong Struct Update syntax
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: String::from("dolamuoludare@gmail.com");
+        sign_in_count: user1.sign_in_count,
+    };
+
+    // Correct syntax update
+    let user2 = User {
+        email: String::from("dolamuoludare@gmail.com"),
+        ..user1
+    }
 }
 
 // Function returning structs
@@ -36,3 +50,4 @@ fn build_user(email: String, username: String) -> User {
         sign_in_count: 1,
     }
 }
+
