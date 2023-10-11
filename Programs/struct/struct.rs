@@ -25,3 +25,14 @@ fn main() {
         sign_in_count: 1,
     };
 }
+
+// Function returning structs
+fn build_user(email: String, username: String) -> User {
+    // absence of the semicolon after declaring the struct means we are returning it
+    User {
+        active: true,
+        username: username,
+        email: email,
+        sign_in_count: 1,
+    }
+}
