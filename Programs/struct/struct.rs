@@ -18,7 +18,7 @@ struct User {
 
 fn main() {
     // Instance of struct User
-    let user1 = User {
+    let mut user1 = User {
         active: true,
         username: String::from("Dolamu"),
         email: String::from("oludaredolamu@gmail.com"),
