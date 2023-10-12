@@ -44,18 +44,25 @@
 
 // 4 . 
 // Fix the errors without adding or removing lines
+//   
+
+// 5. 
 fn main() {
-    let names: [String; 2] = [String::from("liming"), String::from("hanmeime")];
-    for name in &names {
-        print!("{}\n", name)
-    }
+    let a: [i32; 4] = [4, 3, 2, 1];
 
-    println!("{:?}", names); // violate ownership rule.
-
-    let numbers: [i32; 3] = [1, 2, 3];
-    for mut number in numbers {
-        number = number * 2;
-        print!("{}\n", number);
+    // Iterate the indexing and value in 'a'
+    for (i, v) in a.iter().enumerate() {
+        if i + 1 == 1 {
+            println!("The {}st element is {}", i+1, v);
+        };
+        if i + 1 == 2 {
+            println!("The {}nd element is {}", i+1, v);   
+        };
+        if i + 1 == 3 {
+            println!("The {}rd element is {}", i+1, v);   
+        };
+        if i + 1 > 3 {
+            println!("The {}th element is {}", i+1, v);
+        };   
     }
-    print!("{:?}\n", numbers);
 }
