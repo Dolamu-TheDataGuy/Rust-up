@@ -79,29 +79,57 @@
 // }
 
 // 4. Fill in the blank and fix the errors.
+// #![allow(warnings)]
+// #[derive(Debug)]
+// enum Message {
+//     Quit, 
+//     Move {x: i32, y: i32 },
+//     Write(String),
+//     ChangeColor(i32, i32, i32),
+// }
+
+
+// fn main() {
+//     let msgs: [Message; 4] = [
+//         Message::Quit,
+//         Message::Move{x: 1, y: 3},
+//         Message::Write(String::from("hello!")),
+//         Message::ChangeColor(255, 255, 0)
+//     ];
+
+//     for msg in msgs {
+//         show_message(msg)
+//     }
+// }
+
+// fn show_mes sage(msg: Message) {
+//     print!("{:?}\n", msg);
+// }
+
+// 5. Since there is no null in Rust, we have to use enum Option<T> to deal
+// with the cases when the value is absent.
+// Fill in the blank to make the println work.
+// Also add some code to prevent the `panic` from running.
+
 #![allow(warnings)]
-#[derive(Debug)]
-enum Message {
-    Quit, 
-    Move {x: i32, y: i32 },
-    Write(String),
-    ChangeColor(i32, i32, i32),
-}
-
-
 fn main() {
-    let msgs: [Message; 4] = [
-        Message::Quit,
-        Message::Move{x: 1, y: 3},
-        Message::Write(String::from("hello!")),
-        Message::ChangeColor(255, 255, 0)
-    ];
+    let five: Option<i32> = Some(5);
+    let six: Option<i32> = plus_one(five); // Some(6)
+    let none: Option<i32> = plus_one(None);
 
-    for msg in msgs {
-        show_message(msg)
-    }
+    if let Some(n) = six {
+        println!("{}", n);
+
+        println!("Success!");
+    } else {
+        panic!("Never let this run!");
+    }    
 }
 
-fn show_message(msg: Message) {
-    print!("{:?}\n", msg);
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
+    }
 }
