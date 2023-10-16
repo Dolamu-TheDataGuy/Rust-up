@@ -14,27 +14,27 @@
 
 
 // Destructuring assignment
-fn main() {
-    let (x, y);  // same as let x and let y on different lines
+// fn main() {
+//     let (x, y);  // same as let x and let y on different lines
     
-    (x, ..) = (3, 4);
-    [.., y] = [1, 2];
+//     (x, ..) = (3, 4);
+//     [.., y] = [1, 2];
 
-    assert_eq!([x,y], [3, 2])
-    println!("Worked!");
-}
+//     assert_eq!([x,y], [3, 2])
+//     println!("Worked!");
+// }
 
 
 // Tuples in Rust
-// fn main() {
+fn main() {
 
-//     let x: (i32, f64, u8) = (500, 6.4, 1);
+    let x: (i32, f64, u8) = (500, 6.4, 1);
 
-//     let five_hundred = x.0;
+    let five_hundred = x.0;
 
-//     let six_point_four = x.1;
+    let six_point_four = x.1;
 
-//     let one = x.2;
-// }
+    let one = x.2;
+}
 
 

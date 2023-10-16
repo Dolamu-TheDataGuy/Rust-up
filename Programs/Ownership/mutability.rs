@@ -64,7 +64,7 @@
 fn main() {
     let t: (String, String) = (String::from("hello"), String::from("world"));
 
-    let (s1, s2) = __;
+    let (s1, s2) = t.clone();
 
     // Modify this line only, don't use `_s`
     println!("{:?}, {:?}, {:?}", s1, s2, t);  // -> "hello", "world", ("hello", "world")

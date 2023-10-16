@@ -244,3 +244,15 @@
 
 //     println!("Success!");
 // }
+
+// RECAP
+// Char: single character of size 4 bytes, represented with single quote.
+
+// Bool: Boolean value of true or false of size 1byte.
+
+// Unit: Empty tuple of size 0 bytes, used to return "nothing" in expressions or funtions.  
+
+// Exercise
+
+// Make it work with two ways
+

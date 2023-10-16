@@ -48,36 +48,52 @@
 // }
 
 // 5.
-fn main() {
-    let mut s: String = String::from("hello, ");
+// fn main() {
+//     let mut s: String = String::from("hello, ");
 
-    // Fill the blank to make it work
-    let p: &mut String = &mut s ;
+//     // Fill the blank to make it work
+//     let p: &mut String = &mut s ;
 
-    p.push_str("world");
+//     p.push_str("world");
 
-    println!("Success!");
-}
+//     println!("Success!");
+// }
 
 // 6. Ref: ref can be used to take references to a value, similar to &.
 
+// fn main() {
+//     let c: char = 'a';
+
+//     let r1: &char = &c;
+
+//     // Fill the blank, don't change other code
+//     let ref r2 = c;
+
+//     assert_eq!(*r1, *r2);
+
+//     // Check the equality of the two address strings
+//     assert_eq!(get_addr(r1), get_addr(r2));
+
+//     print!("Success!");
+// }
+
+// // Get memory address string
+// fn get_addr(r: &char) -> String {
+//     format!("{:p}", r)
+// }
+
+// 7.
+// Remove something to make it work
+// Don't remove a whole line!
 fn main() {
-    let c: char = 'a';
+    let s: String = String::from("hello");
 
-    let r1: &char = &c;
+    let r1: &String = &s;
+    let r2: &String = &s;
 
-    // Fill the blank, don't change other code
-    let ref r2 = c;
+    print!("{}, {}\n", r1, r2);
 
-    assert_eq!(*r1, *r2);
+    print!("s: {}\n", s);
 
-    // Check the equality of the two address strings
-    assert_eq!(get_addr(r1), get_addr(r2));
-
-    print!("Success!");
-}
-
-// Get memory address string
-fn get_addr(r: &char) -> String {
-    format!("{:p}", r)
+    println!("Success!");
 }
