@@ -70,6 +70,8 @@
     
 // }
 
+//SLICE IN RUST
+
 // fn main() {
 //     let a = [1, 2, 3, 4, 5];
 
@@ -118,9 +120,11 @@ fn main() {
     let mut s: String = String::from("hello wold");
 
     let word: &str = first_word(&s); // &str
+    
+
+    s.clear();  //error
     println!("the first word is {}", word);
     
-    s.clear();  //error
 }
 
 
