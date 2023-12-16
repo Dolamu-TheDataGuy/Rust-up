@@ -1,6 +1,6 @@
 # Rust-up
 
-This repository is a map to my Rust journey. The Rust programming language is a systems programming language that  
+This repository is a map to my Rust journey. The Rust programming language is a systems programming language that is being used in diverse areas like `web development`, `network programming`, `system programming`, `game development`, and `data science backends`. Companies like `Facebook`, `Discord`, and `Amazon` are implementing Rust to enhance their software systems and improve security
 
 ### Why am I learning Rust?
 <hr/>
