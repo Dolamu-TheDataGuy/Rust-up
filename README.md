@@ -16,10 +16,12 @@ This repository is a map to my Rust journey. The Rust programming language is a 
 
 ## Variables in Rust
 <hr/>
-* Every variable in rust is intrinsically immutable.
-* Variables can only be used when it has been initialized.
-* Shadowing allows a variable to be re-declared in the same scope at the same time.
-* Variables are assigned using the `let` keyword.
-* Print to standard output with `print!()` or `println!()`
-* Scope of a variable defined by the block of code that is reusable.
-* Shadowing allows a variable to be re-declared in the same scope with the same name.
+
+
+*  Every variable in rust is intrinsically immutable.
+*  Variables can only be used when it has been initialized.
+*  Shadowing allows a variable to be re-declared in the same scope at the same time.
+*  Variables are assigned using the `let` keyword.
+*  Print to standard output with `print!()` or `println!()`
+*  Scope of a variable defined by the block of code that is reusable.
+*  Shadowing allows a variable to be re-declared in the same scope with the same name.
