@@ -8,13 +8,13 @@ This repository is a map to my Rust journey. The Rust programming language is a 
 * Rust is the fastest programming language after C.
 * It has a rich type system.
 * No garbage collector (faster runtime).
-* Useful compiler output (I think rust has one of the best if no the best compiler system).
+* Useful compiler output (I think Rust has one of the best if no the best compiler system).
 * It has memory safety.
-* It is the most beloved programming language since 2016 according to stackoverflow
+* It is the most beloved programming language since 2016 according to StackOverflow.
 * Fast adoption in various branches.
 
 
-## [https://github.com/Dolamu-TheDataGuy/Rust-up/tree/main/Programs/rust_variables](Variables in Rust)
+## [Variables in Rust]([Variables in Rust](https://github.com/Dolamu-TheDataGuy/Rust-up/tree/main/Programs/rust_variables))
 <hr/>
 
 *  Every variable in rust is intrinsically immutable.
