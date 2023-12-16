@@ -14,9 +14,8 @@ This repository is a map to my Rust journey. The Rust programming language is a 
 * Fast adoption in various branches.
 
 
-## Variables in Rust
+## [https://github.com/Dolamu-TheDataGuy/Rust-up/tree/main/Programs/rust_variables](Variables in Rust)
 <hr/>
-
 
 *  Every variable in rust is intrinsically immutable.
 *  Variables can only be used when it has been initialized.
