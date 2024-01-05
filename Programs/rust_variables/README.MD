@@ -7,7 +7,6 @@ In Rust, data types have well-defined sizes in bytes and are guaranteed by the l
 The integer types just like every other language are used to hold whole numbers and there are different flavors of integer data types in rust, there are the unsigned and signed integer types and they have different capacities and sizes.
 
 ### Signed integer (i)
-
 * `i8`: Signed 8-bit integer (Positive and Negative values)
     * Size: 1 byte (8bits)
     * Potential values: -128 to 127.
@@ -33,7 +32,6 @@ The integer types just like every other language are used to hold whole numbers 
     * Potential values: Platform-dependent.
 
 ### Unsigned integer (u)
-
 * `u8`: Unsigned 8-bit integer (Only positive).
     * Size: 1 byte (8bits).
     * Potential values: 0 to 255.
