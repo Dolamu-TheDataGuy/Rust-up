@@ -97,8 +97,7 @@ Example:
 An array is a fixed-size collection of elements, and all elements must have the same data type. Arrays are defined with square brackets.
 
 Example:
-```let array: [i32, 5] = [1, 2, 3, 4, 5]
-```
+```let array: [i32, 5] = [1, 2, 3, 4, 5]```
 
 ### Slices
 A slices is a reference to a contiguous portion of an array. Slices do not have a fixed size and are denoted using `&[T]` syntax.
