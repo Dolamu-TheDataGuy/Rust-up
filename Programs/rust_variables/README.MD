@@ -90,7 +90,7 @@ There are compound types in rust which are made from primitive data types.
 A tuple is an ordered collection of elements, and each elements can have a different data type. Tuples are defined with parentheses.
 
 Example:
-``` let tuple: (i32, f64, char) = (42, 3.14, 'A)```
+``` let tuple: (i32, f64, char) = (42, 3.14, 'A')```
 
 
 ### Arrays
