@@ -3,8 +3,10 @@
 fn main(){
     // Global scope
     let x: i32 = 10;
+    let y: i32 = 8;
 
     {
+        // Local/inner scope
         let y:i32 = 5;
         println!("The value of x is {} and value of y is {}", x, y);
     }
