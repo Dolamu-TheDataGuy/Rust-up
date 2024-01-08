@@ -68,6 +68,8 @@ The floating-point types in the rust are used to hold decimal numbers. They are 
     * Size: 4 bytes. 
     * Potential values: Depends on IEEE-754 standard, approximately ±1.18 x 10^-38 to ±3.4 x 10^38.
 
+`NB: Default type for integers is ~i32~ while for floats is ~f64~`
+
 ## Boolean Types.
 The boolean type is used for comparison and logical operations in programing.
 
