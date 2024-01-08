@@ -1,5 +1,6 @@
 // Shadowing allows you to re-initialize a variable with another value.
 #![allow(warnings)]
+#[allow(unused_variables)]
 // fn main() {
 //     let x: i32 = 5;
 
@@ -26,4 +27,4 @@ fn main() {
     // Shadowing
     let y: &str = "I can also  be bound to a text";
     println!("{}\n {}", x, y);
-} 
+}
