@@ -1,4 +1,4 @@
-
+#![allow(warnings)]
 // WHY AM I LEARNING RUST?
 // -FASTEST LANGUAGE AFTER C
 // RICH TYPE SYSTEM
