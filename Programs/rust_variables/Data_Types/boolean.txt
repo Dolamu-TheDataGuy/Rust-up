@@ -18,3 +18,20 @@ true   true  true
 NOT
 !false   true
 !true    false
+
+
+LOGIC GATES (BITWISE OPERATION)
+Truth Table AND (&)
+A   B   Q
+0   0   1
+0   1   0
+1   0   0
+1   1   1
+
+
+Truth Table OR (|)
+A   B   Q
+0   0   0
+0   1   1
+1   0   1
+1   1   1
