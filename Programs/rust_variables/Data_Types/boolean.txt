@@ -1,0 +1,20 @@
+Boolean logic deals with values that are either "true" or "false" (or 1 or 0)
+
+Three basic operations: AND, OR, NOT
+
+
+Truth Table AND
+false   false  false
+false   true  false
+true   false  false
+true   true  true
+
+Truth Table OR
+false   false  false
+false   true    true
+true   false  true
+true   true  true
+
+NOT
+!false   true
+!true    false
