@@ -35,3 +35,11 @@ A   B   Q
 0   1   1
 1   0   1
 1   1   1
+
+
+Truth Table (XOR (^)) ==> Returns 1 if the inputs are different and 0 if they are the same.
+A   B   Q
+0   0   0
+0   1   1
+1   0   1
+1   1   0
