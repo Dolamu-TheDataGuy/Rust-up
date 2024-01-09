@@ -43,3 +43,10 @@ A   B   Q
 0   1   1
 1   0   1
 1   1   0
+
+Bitwise Left shif
+1 << 5  == 1 * 2 ^ 5  = 32
+
+Bitwise Right shift
+
+128 >> 2 == 128/(2^2) = 32
