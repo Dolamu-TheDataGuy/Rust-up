@@ -50,3 +50,11 @@ Bitwise Left shif
 Bitwise Right shift
 
 128 >> 2 == 128/(2^2) = 32
+
+
+Basic Types
+Char: Single character of size 4bytes
+
+Bool: Boolean value of true or false of size 1bytes.
+
+Unit: Empty tuple of size 0 bytes, used to retrun "nothing" in expressions or functions.
