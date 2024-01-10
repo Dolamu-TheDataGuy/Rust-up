@@ -11,7 +11,6 @@ fn main() {
     assert_eq!(v, implicitly_ret_unit());
 
     println!("Success!");
-
 }
 
 fn implicitly_ret_unit() {
@@ -21,5 +20,3 @@ fn implicitly_ret_unit() {
 fn explicitly_ret_unit() {
     println!("I will return a ()");
 }
-
-
