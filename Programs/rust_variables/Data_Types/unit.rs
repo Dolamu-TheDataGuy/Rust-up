@@ -8,7 +8,7 @@ fn main() {
     let v: () = ();
 
     let x: (i32, i32) = (2,3);
-    assert_eq!(v, implicitly_ret_unit());
+    assert_eq!(v, implicitly_ret_unit()); 
 
     println!("Success!");
 }
