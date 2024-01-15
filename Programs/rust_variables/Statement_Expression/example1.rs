@@ -12,10 +12,14 @@ fn main() {
 
         // This expression will be assigned to `y`
         x_cube + x_squared + x
-    }
+    };
 
     let z = {
         // The semicolon supresses this expression and `()` is assigned to `z`
         2 * x;
-    }
+    };
+
+    println!("x is {:?}", x);
+    println!("y is {:?}", y);
+    println!("z is {:?}", z);
 }
