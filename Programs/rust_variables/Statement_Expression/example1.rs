@@ -5,7 +5,7 @@
 fn main() {
     let x: u32 = 5;
 
-    let y = {
+    let y: u32 = {
         let x_squared = x * x;
 
         let x_cube = x_squared * x;
@@ -14,7 +14,7 @@ fn main() {
         x_cube + x_squared + x
     };
 
-    let z = {
+    let z: () = {
         // The semicolon supresses this expression and `()` is assigned to `z`
         2 * x;
     };
