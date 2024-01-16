@@ -60,3 +60,34 @@ The stack memory uses the Last In First Out (`LIFO`) route to process data, mean
 * Pushing  to the stack is faster than allocating to the heap, because the location for new data is always at the top of the stack.
 
 * Type of unknown size will get allocated to the heap and a pointer to the value is pushed to stack, because a pointer is fixed in size `(usize)`.
+
+#### Code Example
+
+```
+fn main() {
+    let x = 42;
+    let y = 10;
+    let z = add_numbers(x, y);
+
+    println!("The result is {}", z);
+}
+
+fn add_numbers(a: i32, b: i32) -> i32 {
+    let c = a + b;
+    c
+}
+```
+<img src="./images/stack_memory.png"/>
+
+
+## Heap Memory
+
+<img src="./images/heap_memory.png"/>
+
+* Data of no known, fixed size belongs on the heap.
+
+* Allocating data on the heap will return a pointer (an address to location where data has been allocated)
+
+* Allocating on the heap is slower than pushing to stack.
+
+* Accessing data on the heap is also slower, as it has to be accessed using a pointer which points to an address.
