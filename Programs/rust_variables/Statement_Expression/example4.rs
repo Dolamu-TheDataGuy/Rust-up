@@ -1,5 +1,5 @@
 fn main() {
-    let s = sum(1, 2);
+    let s = sum(1, 2); //3
     assert_eq!(s, 3);
 
     println!("Success!");
