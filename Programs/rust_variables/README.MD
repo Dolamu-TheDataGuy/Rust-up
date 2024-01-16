@@ -84,6 +84,9 @@ The character type is used to hold character and is always encoded in a single c
 * Size: 4 bytes (always 4 bytes due to Unicode encoding).
 * Potential values: Any valid Unicode character.
 
+## Unit Type
+The `unit` type in rust is similar to the `None` in Python. The unit type is simply an empty tuple `()` of size `0` bytes, used to return `nothing` in expressions or functions.
+
 
 ## Compound Types
 There are compound types in rust which are made from primitive data types.
