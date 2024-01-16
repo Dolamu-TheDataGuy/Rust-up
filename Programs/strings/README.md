@@ -51,3 +51,17 @@ __s1__ and __s2__ point to the same location in heap memory.
 This would **violate the second rule** of ownership which says that there can only be **ONE owner** at a time.
 
 So, the first variable __s1__ will be **dropped** and cannot be used after assigning it to __s2__, to avoid dangling pointers.
+
+
+## Deep Copy
+
+```
+let s1 = String::from("hello");
+let s2 = s1.clone();
+
+println!("s1 = {}, s2 = {}", s1, s2);
+```
+
+<img src=./images/deep_copy.png>
+
+This is actually expensive.
