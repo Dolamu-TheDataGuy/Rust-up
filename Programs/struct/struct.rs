@@ -9,6 +9,9 @@
 // template for the instances you create from it.
 
 // Template
+
+#[derive(Debug)]
+#[allow(dead_code)]
 struct User {
     active: bool,
     username: String,
@@ -18,7 +21,7 @@ struct User {
 
 fn main() {
     // Instance of struct User
-    let mut user1 = User {
+    let user1 = User {
         active: true,
         username: String::from("Dolamu"),
         email: String::from("oludaredolamu@gmail.com"),
@@ -26,28 +29,30 @@ fn main() {
     };
 
     // Wrong Struct Update syntax
-    let user2 = User {
+    let user2_wrong = User {
         active: user1.active,
-        username: user1.username,
-        email: String::from("dolamuoludare@gmail.com");
+        username: String::from("Dolamu"),
+        email: String::from("dolamuoludare@gmail.com"),
         sign_in_count: user1.sign_in_count,
     };
 
     // Correct syntax update
-    let user2 = User {
+    let user2_correct = User {
         email: String::from("dolamuoludare@gmail.com"),
         ..user1
-    }
+    };
+    println!("User 2 (Wrong Update Syntax): {:?}", user2_wrong);
+    println!("User 2 (Correct Update Syntax): {:?}", user2_correct);
 }
 
-// Function returning structs
-fn build_user(email: String, username: String) -> User {
-    // absence of the semicolon after declaring the struct means we are returning it
-    User {
-        active: true,
-        username: username,
-        email: email,
-        sign_in_count: 1,
-    }
-}
+// // Function returning structs
+// fn build_user(email: String, username: String) -> User {
+//     // absence of the semicolon after declaring the struct means we are returning it
+//     User {
+//         active: true,
+//         username: username,
+//         email: email,
+//         sign_in_count: 1,
+//     }
+// }
 

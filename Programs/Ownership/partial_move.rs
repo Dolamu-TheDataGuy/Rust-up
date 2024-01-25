@@ -8,10 +8,19 @@ fn main() {
     let person: Person = Person {
         name: String::from("Alice"),
         age: Box::new(20),
-    }
+    };
 
     // `name` is moved out of person, but `age` is referenced
-    let Person { name, ref age } = person;
- 
+    let Person { name, ref age } = person; // ref takes reference of the data
+
+    println!("The person's age is {}", age);
+
+    println!("The person's name is {}", name);
+
+    // Error pops because of borrow partiallity moved value: `person` partial move occurs
+    // println!("The person struct is {:?}", person);
+
+    // `person` cannot be used but `person.age` can be used as it is not moved
+    println!("The person's age from person struct is {}", person.age)
 
 }

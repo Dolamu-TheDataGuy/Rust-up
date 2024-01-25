@@ -65,3 +65,49 @@ println!("s1 = {}, s2 = {}", s1, s2);
 <img src=./images/deep_copy.png>
 
 This is actually expensive.
+
+
+## Compound Types
+
+### String vs. &str
+
+A `String` is a compound data type because it is an array of character.
+
+* A `String` is a __heap-allocated__ string type that owns its contents and is mutable. String is like the string in form of arrays in `C`.
+
+* A `&str` is an __immutable__ sequence of UTF-8 bytes in memory, it does __not own__ the underlying data and is __immutable. `&str` is like `*str` in `C`, they are read-only.
+
+* Think of `&str` as a __view__ on a sequence of characters (stored as UTF-8 bytes) in memory.
+
+* Use `&str` if you just want to a view of a string.
+
+* `&str` is more lightweight and efficient than `String`.
+
+* Use `String` if you need to own the data and be able to mutate it.
+
+
+### String Literal
+
+* A string literal is a sequence of characters enclosed in double quote ('').
+
+* Fixed size, compile-time known sequence of UTF-8 bytes
+
+* The type is `& static str`, which indicates the data is stored in __static storage__, meaning it is __valid__ throughout the __entire lifetime__ of the program.
+
+* The data is __hardcoded__ into the __executable__ and stored in __read-only memory__, meaning they are __immutable__.
+
+#### Example of String Slice
+```
+let s = String::from("hello world");
+
+let hello = &s[0..5];
+let world = &s[6..11];
+```
+
+The string slice `world` points to a __sequence of characters__ stored on the heap.
+
+<img src=./images/string_slice.png>
+
+string slice only keep `pointer (ptr)` and `length (len)` information.
+
+* You can only concatenate a `String` with `&str`, and `String's` ownership can be moved to another variable.
