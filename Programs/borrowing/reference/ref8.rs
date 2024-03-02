@@ -15,5 +15,5 @@ fn main() {
 }
 
 fn get_addr(r: &char) -> String {
-    format!("{:p}", r) //format! macro is the same as the println macro, it returns a String.
+    format!("{:p}", r)  //format! macro is the same as the println macro, it returns a String.
 }

@@ -5,3 +5,13 @@
 * Similar to tuples, but each value has a name so values can be accessed through this name.
 
 * Have to be __instanciated__ with data, think of it like the struct is the __template for the instances__ you create from it.
+
+## Unit-Like Structs
+
+* Structs without any field.
+
+* Used when working with traits (will be covered!)
+
+* Doesn't store any data.
+
+

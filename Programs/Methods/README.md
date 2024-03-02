@@ -1,4 +1,5 @@
 # Methods in Rust
+Methods are similar to functions: Declared with `fn`, they have parameters and return value. Unlike functions, methods are defined within the context of a struct(or an enum or a trait object), and their first parameter is always `self`, which represents the instance of the struct the method is being called on.
 
 * Function that is associated with a __particular type__ or __struct__
 
@@ -38,7 +39,7 @@ println!("The area of the rectangle is {} square pixels.", rect1.area());
 
 Here, we create an instance of `Rectangle` with values for `width` and `height`. Then we can call the method using dot notation on the instance we've created.
 
-__self__ refers to the instance the method is called upon, in this case `rect1`.
+__self__ refers to the instance the method is called upon, in this case `rect1`. `self` will take ownership of current struct instance, however, `&self` will  borrow a reference from the instance. `self` refers to the instantiated object while `Self` refers to the `Class`.
 
 ## Associated Functions
 
@@ -78,4 +79,4 @@ let rect1: Rectangle = Rectangle::new(5, 10);
 println!("Rectangle: {:?}", rec1);
 ```
 
-We can then call the associated function by using the name of the struct and the method name sperated by `::`
+We can then call the associated function by using the name of the struct and the method name sperated by `::`.
