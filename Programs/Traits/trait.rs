@@ -7,9 +7,6 @@ pub struct NewsArticle {
 
 // Trait implementation for NewsArticle
 impl Summary for NewsArticle {
-    fn summarize(&self) -> String {
-        format!("{}, by {}", self.headline, self.author)
-    }
 }
 
 // Tweet struct
@@ -30,7 +27,10 @@ impl Summary for Tweet {
 
 // Trait for NewsArticle and Tweet structs
 pub trait Summary {
-    fn summarize(&self) -> String;
+    // Default impl
+    fn summarize(&self) -> String {
+        String::from("(Read more...)")
+    }
 }
 
 
@@ -42,13 +42,14 @@ fn main() {
         content: String::from("Hello world"),
         reply: false,
         retweet: false,
-    }
+    };
 
     let article: NewsArticle = NewsArticle {
         author: String::from("John Doe"),
         headline: String::from("The Sky is Falling!"),
         content: String::from("The sky is not actually falling.")
-    }
+    };
+
 
     println!("Tweet summary: {}", tweet.summarize());
     println!("Article summary: {}", article.summarize());
