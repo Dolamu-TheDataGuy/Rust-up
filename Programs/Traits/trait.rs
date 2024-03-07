@@ -7,6 +7,9 @@ pub struct NewsArticle {
 
 // Trait implementation for NewsArticle
 impl Summary for NewsArticle {
+fn summarize_author(&self) -> String {
+    format!("@{}", self.author)
+}
 }
 
 // Tweet struct
@@ -19,6 +22,10 @@ pub struct Tweet {
 
 // Trait implementation for Tweet
 impl Summary for Tweet {
+    fn summarize_author(&self) -> String {
+        format!("@{}", self.username)
+    }
+
     fn summarize(&self) -> String {
         format!("{} : {}", self.username, self.content)
     }
@@ -27,11 +34,46 @@ impl Summary for Tweet {
 
 // Trait for NewsArticle and Tweet structs
 pub trait Summary {
+    fn summarize_author(&self) -> String;
+
     // Default impl
     fn summarize(&self) -> String {
         String::from("(Read more...)")
     }
 }
+
+// Traits as Parameters
+// pub fn notify(item: &impl Summary) {
+//     println!("Breaking news! {}", item.summarize());
+// }
+
+// Generic limited to data type that implements the summary traits
+// pub fn notify<T: Summary>(item: &T) {
+//     println!("Breaking news! {}", item.summarize());
+// }
+
+
+// pub fn notify(item1: &(impl Summary + Display), item2: &impl Summary) {
+
+// }
+
+// pub fn notify<T: Summary + Display>(item1: &T, item2: &T) {
+
+// }
+
+
+// fn some_function<T: Display + Clone, U: Clone + Debug>(t: &T, u: &U) -> i32 {
+
+// }
+
+// // using where clause for readability
+// fn some_function<T, U>(t: &T, u: &U) -> i32 
+//     where T: Display + Clone,
+//           U: Clone + Debug
+// {
+
+// }
+
 
 
 
@@ -51,6 +93,10 @@ fn main() {
     };
 
 
-    println!("Tweet summary: {}", tweet.summarize());
-    println!("Article summary: {}", article.summarize());
+    // println!("Tweet summary: {}", tweet.summarize());
+    // println!("Article summary: {}", article.summarize());
+    // println!("Tweet summary: {}", tweet.summarize_author());
+    // println!("Article summary: {}", article.summarize_author());
+
+    notify(&article);
 }
