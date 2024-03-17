@@ -25,7 +25,7 @@ impl Rectangle {
 
 ```
 
-Inside the `impl` block for the type `Rectangle` we define the method `area()` that doesn't take any arguments and __returns the product__ of width and height of an instance as an u32 integer.
+Inside the `impl` block for the type `Rectangle` we define the method `area()` that doesn't take any arguments and __returns the product__ of width and height of an instance as an `u32` integer.
 
 ```
 let rect1: Rectangle = Rectangle {

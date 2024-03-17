@@ -74,6 +74,40 @@ pub trait Summary {
 
 // }
 
+// Return traits
+// fn returns_summarizable() -> impl Summary {
+//     Tweet {
+//         username: String::from("horsebooks"),
+//         content: String::from(
+//             "of course, as you probably already know"
+//         ),
+//         reply: false,
+//         retweet: false,
+//     }
+// }
+
+
+// Logic on function
+fn returns_summarizable(switch: bool) -> impl Summary {
+    
+    if switch {
+            NewsArticle {
+                headline: String::from("Penguin win the cup"),
+                author: String::from("Iceburgh"),
+                content: String::from("The Pittsburgh once again"),
+            }
+
+    } else {
+            Tweet {
+            username: String::from("horsebooks"),
+            content: String::from(
+                "of course, as you probably already know"
+            ),
+            reply: false,
+            retweet: false,
+        }
+    }
+}
 
 
 
@@ -98,5 +132,8 @@ fn main() {
     // println!("Tweet summary: {}", tweet.summarize_author());
     // println!("Article summary: {}", article.summarize_author());
 
-    notify(&article);
+    // notify(&article);
+
+    println!("{}", returns_summarizable(false).summarize())
 }
+

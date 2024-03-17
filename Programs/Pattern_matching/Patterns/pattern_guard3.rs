@@ -5,8 +5,7 @@ fn main() {
     let r: &mut String = &mut v;
 
     match r {
-        value => print!("The new string is {:?}\n",value), // matches the value and not the reference
-    }
-
-    
+        // value => print!("The new string is {:?}\n",value), // matches the value and not the reference
+        value => value.push_str("world!"),
+    }  
 }
