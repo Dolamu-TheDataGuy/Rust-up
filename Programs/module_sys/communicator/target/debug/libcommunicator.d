@@ -1,0 +1,1 @@
+/home/dolzy/RUST/Programs/module_sys/communicator/target/debug/libcommunicator.rlib: /home/dolzy/RUST/Programs/module_sys/communicator/src/client.rs /home/dolzy/RUST/Programs/module_sys/communicator/src/lib.rs /home/dolzy/RUST/Programs/module_sys/communicator/src/network/mod.rs /home/dolzy/RUST/Programs/module_sys/communicator/src/network/server.rs
