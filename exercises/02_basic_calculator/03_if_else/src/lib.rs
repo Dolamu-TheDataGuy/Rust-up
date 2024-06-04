@@ -1,7 +1,7 @@
 /// Return `true` if `n` is even, `false` otherwise.
 #[allow(dead_code)]
 fn is_even(n: u32) -> bool {
-    return n % 2 == 0;
+    return n % 2 == 0cl;
 }
 
 #[cfg(test)]
